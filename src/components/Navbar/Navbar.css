@@ -1,0 +1,21 @@
+a{
+    @apply hover:text-yellow-500 text-white hover:underline underline-offset-4;
+}
+
+.displayNavLink{
+    display:flex;
+    opacity: 0;
+    animation: navLink 0.4s ease-in-out 0ms 1 normal forwards;
+    transform: scale(0%);
+}
+
+@keyframes navLink {
+    50%{
+        opacity: 0.5;
+        transform: scale(120%);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(100%);
+    }
+}
